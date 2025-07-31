@@ -6,7 +6,7 @@
   <li><a href="common-concerns.php">Common Concerns</a></li>
   <li><a href="our-process.php">Our Process</a></li>
   <!-- <li><a href="#portfolio">Portfolio</a></li> -->
-  <li><a href="#contact">Contact</a></li>
+  <li><a href="contact.php">Contact</a></li>
  </ul>
  <a href="#cta" class="btn">Get Started</a>
 </nav>
