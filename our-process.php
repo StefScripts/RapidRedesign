@@ -11,6 +11,10 @@ include('components/header.php');
 </section>
 
 <section class="content-section">
+  <div class="container">
+    <h1>Our Process</h1>
+    <p class="lead-text">Simple. Transparent. Built Around Your Business.</p>
+  </div>
   <div class="container narrow-container">
     <div class="intro-box">
       <p>We've stripped away everything that makes web design projects painful. No endless meetings. No content creation
