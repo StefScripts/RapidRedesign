@@ -102,7 +102,7 @@ include('components/header.php');
    </div>
   </div>
   <div class="cta-center">
-   <a href="addressing-concerns.php" class="btn btn-light">See All FAQs</a>
+   <a href="faqs.php" class="btn btn-light">See All FAQs</a>
   </div>
  </div>
 </section>

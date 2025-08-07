@@ -6,13 +6,8 @@
   </a>
  </div>
  <ul class="nav-links">
-  <!-- <li><a href="how-it-works.php">How It Works</a></li> -->
-  <li><a href="why-us.php">Why Choose Us</a></li>
-  <li><a href="common-concerns.php">Common Concerns</a></li>
-  <li><a href="our-process.php">Our Process</a></li>
-  <!-- <li><a href="concerns-process.php">Process & Concerns</a></li> -->
-
-  <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+  <li><a href="process.php">Our Process</a></li>
+  <li><a href="faqs.php">FAQs</a></li>
   <li><a href="contact.php">Contact</a></li>
  </ul>
  <a href="#cta" class="btn">Get Started</a>

@@ -15,7 +15,6 @@ include('components/header.php');
   <h2 class="section-title">Three Steps to a Website That Works</h2>
 
   <div class="simple-process">
-
    <div class="process-step">
     <div class="step-icon">📥</div>
     <h3>We Capture</h3>
@@ -35,8 +34,116 @@ include('components/header.php');
    </div>
   </div>
 
+  <!-- <div class="cta-center">
+   <a href="our-process.php" class="btn">See the Full Process</a>
+  </div> -->
  </div>
 </section>
+
+<!-- <section class="intro-section">
+  <div class="container narrow-container">
+    <p class="intro-box">
+      We've eliminated everything painful about typical web redesigns: no endless meetings, no content paralysis, no hidden costs. Just a straightforward process that transforms your outdated site into a professional, modern, client-generating tool—fast.
+    </p>
+  </div>
+</section> -->
+
+<!-- <section class="process-section">
+  <div class="container narrow-container">
+    <h2 class="section-title">A Simple, 3-Step Transformation</h2>
+
+    <div class="process-steps">
+      <div class="step">
+        <div class="step-circle">1</div>
+        <h3 class="step-title">Preserve Your Content</h3>
+        <p>We capture everything from your existing website—every page, paragraph, and detail you've already created.</p>
+        <div class="highlight-box">
+          <strong>What this means for you:</strong>
+          <ul>
+            <li>No tedious content worksheets</li>
+            <li>No copywriting homework</li>
+            <li>Your existing content is our blueprint</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-circle">2</div>
+        <h3 class="step-title">Keep Your Identity, Lose the Clutter</h3>
+        <p>We analyze your site's visual "DNA," keeping colors, fonts, and images that represent your unique brand, while removing outdated elements.</p>
+        <div class="highlight-box">
+          <strong>What this means for you:</strong>
+          <ul>
+            <li>Your site's personality remains intact</li>
+            <li>Refined visuals, never generic templates</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-circle">3</div>
+        <h3 class="step-title">Upgrade Your User Experience</h3>
+        <p>We rebuild your site for optimal user experience—easy to read, navigate, and contact you—without losing its essential character.</p>
+        <div class="highlight-box">
+          <strong>What this means for you:</strong>
+          <ul>
+            <li>A familiar website that simply works better</li>
+            <li>Clear pathways turning visitors into leads</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- <section class="process-section">
+  <div class="container narrow-container">
+    <h2 class="section-title">Your Website, Refined—in Just 3 Steps</h2>
+
+    <div class="process-steps">
+
+      <div class="step">
+        <div class="step-circle">1</div>
+        <h3 class="step-title">1. We Save All Your Content</h3>
+        <p>Every word, image, and page stays intact—no rewriting or busywork for you.</p>
+        <div class="highlight-box">
+          <strong>You get:</strong>
+          <ul>
+            <li>No content homework</li>
+            <li>No starting from scratch</li>
+            <li>Your existing work as our guide</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-circle">2</div>
+        <h3 class="step-title">We Keep Your Brand, Cut the Clutter</h3>
+        <p>Your colors, fonts, and style stay—we just remove what’s outdated or distracting.</p>
+        <div class="highlight-box">
+          <strong>You get:</strong>
+          <ul>
+            <li>A recognizable (but sharper) look</li>
+            <li>No generic templates—just <i>your</i> brand</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-circle">3</div>
+        <h3 class="step-title">We Make It Effortless to Use</h3>
+        <p>A site that’s easy to navigate, read, and convert visitors—without losing its soul.</p>
+        <div class="highlight-box">
+          <strong>You get:</strong>
+          <ul>
+            <li>A site that works <i>for</i> you</li>
+            <li>More leads, less friction</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
 
 <section class="improvements-section">
   <div class="container narrow-container">
@@ -101,6 +208,48 @@ include('components/header.php');
   </div>
 </section>
 
+<!-- <section class="comparison-section">
+  <div class="container">
+    <h2 class="section-title">The Rapid Redesign Difference</h2>
+    <table class="comparison-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Traditional Designers</th>
+          <th>Rapid Redesign</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Timeline</td>
+          <td class="xmark">Months of delays</td>
+          <td class="checkmark">7-day turnaround</td>
+        </tr>
+        <tr>
+          <td>Pricing</td>
+          <td class="xmark">$10k+ hidden fees</td>
+          <td class="checkmark">Fixed from $1,500</td>
+        </tr>
+        <tr>
+          <td>Process</td>
+          <td class="xmark">Endless meetings</td>
+          <td class="checkmark">Efficient, stress-free</td>
+        </tr>
+        <tr>
+          <td>Quality</td>
+          <td class="xmark">Generic results</td>
+          <td class="checkmark">Tailored to you</td>
+        </tr>
+        <tr>
+          <td>SEO & Speed</td>
+          <td class="xmark">Charged as extras</td>
+          <td class="checkmark">Built-in essentials</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section> -->
+
 <section class="approach-section">
  <div class="container">
   <h2 class="section-title">Skip the Typical Agency Nightmare</h2>
@@ -141,6 +290,8 @@ include('components/header.php');
   </div>
  </div>
 </section>
+
+<!-- <?php include('components/pricing-block.php'); ?> -->
 
 <section class="expansion-section">
   <div class="container narrow-container">

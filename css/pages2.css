@@ -1,0 +1,530 @@
+/* =================================================================
+   Process Page - Enhanced UX Styles
+================================================================= */
+
+/* Process Preview Section with improved visual flow */
+.process-preview {
+  padding: var(--space-3xl) 0;
+  background: var(--light);
+}
+
+.simple-process {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-lg);
+  max-width: 1000px;
+  margin: var(--space-2xl) auto 0;
+  position: relative;
+}
+
+/* Process connector line (desktop only) */
+.process-connector {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .process-connector {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 20%;
+    right: 20%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent 0%, var(--medium) 10%, var(--medium) 90%, transparent 100%);
+    z-index: 0;
+  }
+}
+
+.process-step {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl) var(--space-lg);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--medium);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.process-step:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary);
+}
+
+/* Step number indicator */
+.step-number {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--primary);
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--text-xs);
+  font-weight: 600;
+}
+
+.step-icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-md);
+  display: block;
+  height: 3rem;
+  line-height: 1;
+}
+
+.process-step h3 {
+  margin-bottom: var(--space-sm);
+  color: var(--dark);
+  font-size: var(--text-xl);
+  font-weight: 600;
+}
+
+.process-step p {
+  color: var(--text-secondary);
+  font-size: var(--text-base);
+  margin: 0;
+}
+
+/* =================================================================
+   Benefits & Cards with improved design
+================================================================= */
+.improvements-section {
+  padding: var(--space-3xl) 0;
+  background: white;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-lg);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.benefit-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 0;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--medium);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+/* Card header with accent */
+.card-header {
+  background: linear-gradient(135deg, var(--light) 0%, white 100%);
+  padding: var(--space-lg);
+  border-bottom: 2px solid var(--primary);
+}
+
+.card-header h3 {
+  margin: 0;
+  color: var(--dark);
+  font-size: var(--text-lg);
+  font-weight: 600;
+}
+
+.benefit-card ul {
+  list-style: none;
+  padding: var(--space-lg);
+}
+
+.benefit-card li {
+  padding: var(--space-sm) 0;
+  border-bottom: 1px solid var(--light-alt);
+  color: var(--text-secondary);
+  line-height: var(--leading-relaxed);
+  font-size: var(--text-base);
+}
+
+.benefit-card li:last-child {
+  border-bottom: none;
+}
+
+/* Services grid variation */
+.services-grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.service-card {
+  min-height: 200px;
+}
+
+.service-card ul {
+  padding: var(--space-md) var(--space-lg);
+}
+
+/* =================================================================
+   Timeline Section with improved visual treatment
+================================================================= */
+.timeline-section {
+  padding: var(--space-2xl) 0;
+  background: var(--light);
+}
+
+.timeline-box {
+  background: white;
+  border-left: 4px solid var(--success);
+  padding: var(--space-lg) var(--space-xl);
+  margin: 0;
+  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.timeline-box h3 {
+  margin-bottom: var(--space-md);
+  color: var(--dark);
+  font-size: var(--text-xl);
+  font-weight: 600;
+}
+
+.timeline-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.timeline-box li {
+  padding: var(--space-xs) 0;
+  color: var(--text-secondary);
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+}
+
+/* =================================================================
+   Avoid Section with warning styling
+================================================================= */
+.avoid-section {
+  padding: var(--space-3xl) 0;
+  background: white;
+}
+
+.avoid-list {
+  background: #fef2f2;
+  border-left: 4px solid #ef4444;
+  padding: var(--space-xl);
+  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+  margin: 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.avoid-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.avoid-list li {
+  padding: var(--space-sm) 0 var(--space-sm) var(--space-lg);
+  position: relative;
+  color: var(--text-secondary);
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+}
+
+.avoid-list li::before {
+  content: '✕';
+  position: absolute;
+  left: 0;
+  color: #ef4444;
+  font-weight: 600;
+  font-size: var(--text-lg);
+}
+
+/* =================================================================
+   Approach Comparison Section with enhanced grid
+================================================================= */
+.approach-section {
+  padding: var(--space-3xl) 0;
+  background: linear-gradient(135deg, var(--light) 0%, white 100%);
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-md);
+  max-width: 1000px;
+  margin: var(--space-2xl) auto 0;
+}
+
+.approach-column {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 0;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--medium);
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.approach-column:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Column headers */
+.column-header {
+  padding: var(--space-lg);
+  background: var(--light-alt);
+  border-bottom: 1px solid var(--medium);
+}
+
+.column-header h3 {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: var(--text-lg);
+  font-weight: 600;
+}
+
+.approach-column ul {
+  list-style: none;
+  text-align: left;
+  padding: var(--space-lg);
+  margin: 0;
+}
+
+.approach-column li {
+  padding: var(--space-sm) 0;
+  border-bottom: 1px solid var(--light-alt);
+  color: var(--text-secondary);
+  font-size: var(--text-base);
+}
+
+.approach-column li:last-child {
+  border-bottom: none;
+}
+
+/* Highlighted column (Our Approach) */
+.approach-column.highlight {
+  border: 2px solid var(--primary);
+  transform: scale(1.05);
+  position: relative;
+  z-index: 2;
+}
+
+.approach-column.highlight .column-header {
+  background: var(--primary);
+  border-bottom: none;
+}
+
+.approach-column.highlight .column-header h3 {
+  color: white;
+}
+
+.approach-column.highlight li {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .approach-column.highlight {
+    transform: none;
+  }
+
+  .comparison-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =================================================================
+   Additional Services Section
+================================================================= */
+.expansion-section {
+  padding: var(--space-3xl) 0;
+  background: var(--light);
+}
+
+/* =================================================================
+   Promise Section with enhanced styling
+================================================================= */
+.promise-section {
+  padding: var(--space-3xl) 0;
+  background: white;
+}
+
+.promise-box {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  padding: var(--space-2xl);
+  border-radius: var(--radius-xl);
+  margin: 0;
+  text-align: center;
+  border: 2px solid var(--accent);
+  box-shadow: var(--shadow-md);
+}
+
+.promise-box h2 {
+  margin-bottom: var(--space-md);
+  color: var(--dark);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+}
+
+.promise-box p {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* =================================================================
+   Contact Page Styles
+================================================================= */
+.contact-section {
+  padding: var(--space-3xl) 0;
+  background: var(--light);
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact-info,
+.contact-form {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: var(--space-2xl);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--medium);
+}
+
+@media (max-width: 600px) {
+  .contact-info,
+  .contact-form {
+    padding: var(--space-lg);
+  }
+}
+
+.contact-info h2,
+.contact-form h2 {
+  margin-bottom: var(--space-lg);
+  color: var(--dark);
+  font-size: var(--text-2xl);
+  font-weight: 600;
+}
+
+.info-item {
+  display: flex;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+  align-items: flex-start;
+}
+
+.info-icon {
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin-top: 2px;
+}
+
+.info-item h3 {
+  margin-bottom: var(--space-xs);
+  color: var(--dark);
+  font-size: var(--text-lg);
+}
+
+.info-item p {
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* Assurance box */
+.assurance-box {
+  background: var(--light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  margin-top: var(--space-xl);
+  border: 1px solid var(--primary);
+}
+
+.assurance-box h3 {
+  margin-bottom: var(--space-md);
+  color: var(--primary);
+  font-size: var(--text-lg);
+}
+
+.assurance-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.assurance-box li {
+  padding: var(--space-xs) 0 var(--space-xs) var(--space-lg);
+  position: relative;
+  color: var(--text-secondary);
+  line-height: var(--leading-relaxed);
+}
+
+.assurance-box li::before {
+  content: '✓';
+  color: var(--success);
+  position: absolute;
+  left: 0;
+  font-weight: 600;
+  font-size: var(--text-lg);
+}
+
+/* =================================================================
+   Dark Mode Support (Optional)
+================================================================= */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --light: #1a1a1a;
+    --light-alt: #2a2a2a;
+    --medium: #3a3a3a;
+    --text-primary: #f3f4f6;
+    --text-secondary: #d1d5db;
+    --text-muted: #9ca3af;
+  }
+
+  body {
+    background: #0f0f0f;
+  }
+
+  .benefit-card,
+  .process-step,
+  .approach-column,
+  .contact-info,
+  .contact-form,
+  .timeline-box {
+    background: #1a1a1a;
+    border-color: #3a3a3a;
+  }
+
+  .card-header,
+  .column-header {
+    background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+  }
+
+  .avoid-list {
+    background: #2a1a1a;
+  }
+
+  .promise-box {
+    background: linear-gradient(135deg, #2a2a1a 0%, #3a3a2a 100%);
+  }
+}
