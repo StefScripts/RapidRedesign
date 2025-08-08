@@ -1,0 +1,313 @@
+/* ==========================
+   Rapid Redesign — Global CSS
+   Tokens, reset, typography, layout, utilities
+   ========================== */
+
+/* 1) CSS Variables (Design Tokens) */
+:root {
+  /* Brand */
+  --brand-50: #eef5ff;
+  --brand-100: #d6e6ff;
+  --brand-200: #aecbff;
+  --brand-300: #7dacff;
+  --brand-400: #4e8fff;
+  --brand-500: #2e73ff; /* Primary */
+  --brand-600: #205ae0;
+  --brand-700: #1b47b3;
+  --brand-800: #173a8f;
+  --brand-900: #132f73;
+
+  --accent-500: #00c2a8; /* Secondary accent (success/energy) */
+  --warn-500: #ffb300;
+  --danger-500: #e5484d;
+
+  /* Greys */
+  --bg: #0b0d12; /* deep navy charcoal */
+  --surface: #11141b;
+  --elev-1: #151924;
+  --elev-2: #1b2130;
+  --elev-3: #222a3b;
+  --text: #e8edf7;
+  --muted: #a9b2c6;
+  --line: #263048;
+
+  /* Content widths & spacing */
+  --container: 1120px;
+  --container-narrow: 820px;
+  --gap-0: 4px;
+  --gap-1: 8px;
+  --gap-2: 12px;
+  --gap-3: 16px;
+  --gap-4: 24px;
+  --gap-5: 32px;
+  --gap-6: 40px;
+  --gap-7: 56px;
+  --gap-8: 72px;
+
+  /* Typography */
+  --font-sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, 'Helvetica Neue', Arial, 'Apple Color Emoji', 'Segoe UI Emoji';
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+
+  --fs-xxs: 12px;
+  --fs-xs: 13px;
+  --fs-sm: 15px;
+  --fs-md: 17px;
+  --fs-lg: 20px;
+  --fs-xl: 24px;
+  --fs-2xl: 30px;
+  --fs-3xl: 38px;
+  --fs-4xl: clamp(36px, 4vw, 54px);
+
+  /* Radii & shadows */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --shadow-1: 0 6px 14px rgba(0, 0, 0, 0.25);
+  --shadow-2: 0 10px 28px rgba(0, 0, 0, 0.35);
+
+  /* Buttons */
+  --btn-bg: var(--brand-500);
+  --btn-bg-hover: var(--brand-600);
+  --btn-text: #fff;
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --speed-1: 140ms;
+  --speed-2: 220ms;
+}
+
+/* Light mode fallback (optional) */
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #ffffff;
+    --surface: #f8fafc;
+    --elev-1: #ffffff;
+    --elev-2: #f6f8fb;
+    --elev-3: #eef2f7;
+    --text: #0b1324;
+    --muted: #4b5569;
+    --line: #e5eaf3;
+  }
+}
+
+/* 2) Modern Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--text);
+  background: radial-gradient(1200px 600px at 20% -10%, rgba(46, 115, 255, 0.12), transparent 60%), var(--bg);
+  line-height: 1.55;
+  font-size: var(--fs-md);
+}
+img,
+svg,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+a {
+  color: var(--brand-400);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--brand-300);
+}
+button {
+  font: inherit;
+  cursor: pointer;
+}
+:focus-visible {
+  outline: 2px solid var(--brand-400);
+  outline-offset: 2px;
+}
+
+/* 3) Layout helpers */
+.container {
+  width: min(100%, var(--container));
+  margin-inline: auto;
+  padding: 0 var(--gap-4);
+}
+.narrow-container {
+  width: min(100%, var(--container-narrow));
+  margin-inline: auto;
+  padding: 0 var(--gap-4);
+}
+.section-light {
+  background: linear-gradient(180deg, var(--surface), rgba(255, 255, 255, 0) 100%);
+}
+.section-title {
+  font-size: var(--fs-3xl);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  margin: 0 0 var(--gap-5);
+}
+
+/* 4) Cards & surfaces */
+.card,
+.benefit-card,
+.service-card,
+.promise-box,
+.timeline-box,
+.approach-column {
+  background: var(--elev-1);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-1);
+}
+
+/* 5) Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: transform var(--speed-1) var(--ease), background var(--speed-1) var(--ease), box-shadow var(--speed-1) var(--ease);
+  border: 0;
+}
+.btn-primary {
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  box-shadow: 0 8px 18px rgba(46, 115, 255, 0.35);
+}
+.btn-primary:hover {
+  background: var(--btn-bg-hover);
+  transform: translateY(-1px);
+}
+.btn-link {
+  background: transparent;
+  color: var(--text);
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+.btn-link:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* 6) Typography */
+h1 {
+  font-size: var(--fs-4xl);
+  line-height: 1.05;
+  margin: 0 0 var(--gap-3);
+  letter-spacing: -0.02em;
+}
+h2 {
+  font-size: var(--fs-3xl);
+  margin: 0 0 var(--gap-4);
+}
+h3 {
+  font-size: var(--fs-xl);
+  margin: 0 0 var(--gap-3);
+}
+h4 {
+  font-size: var(--fs-lg);
+  margin: 0 0 var(--gap-2);
+}
+.lead-text {
+  font-size: var(--fs-lg);
+  color: var(--muted);
+}
+.tiny-trust {
+  font-size: var(--fs-xs);
+  color: var(--muted);
+  margin-top: var(--gap-2);
+}
+
+/* 7) Grids & utilities */
+.grid {
+  display: grid;
+  gap: var(--gap-5);
+}
+.benefits-grid,
+.services-grid,
+.comparison-grid {
+  display: grid;
+  gap: var(--gap-5);
+}
+.benefits-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.services-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.comparison-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+}
+.highlight {
+  border-color: var(--brand-400);
+  box-shadow: 0 0 0 1px inset var(--brand-400), var(--shadow-2);
+}
+
+.center {
+  text-align: center;
+}
+.m0 {
+  margin: 0 !important;
+}
+.mt-4 {
+  margin-top: var(--gap-4);
+}
+.mb-4 {
+  margin-bottom: var(--gap-4);
+}
+.pt-6 {
+  padding-top: var(--gap-6);
+}
+.pb-6 {
+  padding-bottom: var(--gap-6);
+}
+
+/* 8) Media queries */
+@media (max-width: 980px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .comparison-grid {
+    grid-template-columns: 1fr;
+  }
+  .section-title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 640px) {
+  h1 {
+    font-size: clamp(28px, 7vw, 38px);
+  }
+  h2 {
+    font-size: clamp(22px, 5.5vw, 28px);
+  }
+  .container,
+  .narrow-container {
+    padding: 0 var(--gap-3);
+  }
+}
+
+/* 9) Motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* 10) Sticky CTA (shared) */
+.sticky-cta {
+  position: fixed;
+  inset: auto var(--gap-4) var(--gap-4) auto;
+  z-index: 60;
+  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.35));
+}

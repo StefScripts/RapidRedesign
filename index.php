@@ -1,219 +1,246 @@
 <?php
-$pageTitle = "Rapid Redesign | Professional Website Redesigns in 7 Days";
-include('components/header.php');
+$pageTitle = "Rapid Redesign | Turn Your Outdated Site into a Lead Machine in 7–14 Days";
+$pageDescription = "Website upgrade service for service-based businesses. Keep your content and voice, improve design, speed, SEO, and conversions. $0 due until launch.";
+include(__DIR__ . '/components/header.php');
 ?>
 
-<section class="hero">
- <div class="container">
-  <h1>Polish, Don't Rebuild—Website Upgrade in 2 Weeks</h1>
-  <p>We use your content, preserve your voice, and deliver better UX—without the agency drama.</p>
-  <div class="hero-cta">
-   <a href="#process" class="btn">See Our Process</a>
-   <a href="#assessment" class="btn btn-light">Get Your Website Assessment</a>
+<!-- HERO: Outcome + Risk Reversal + Primary CTA -->
+<section class="home-hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <h1>Turn Your Outdated Site into a Lead Machine in 7–14 Days</h1>
+      <p class="lead-text">We keep your voice and content. We fix the design, speed, SEO, and conversions. <strong>$0 due until launch.</strong></p>
+      <div class="hero-ctas">
+        <a href="/contact.php" class="btn btn-primary">Book a 15-min Rapid Audit</a>
+        <a href="/process.php" class="btn btn-link">See how it works</a>
+      </div>
+      <ul class="trust-strip">
+        <li>No downtime</li>
+        <li>SEO-safe migration</li>
+        <li>Mobile-first</li>
+        <li>Core Web Vitals</li>
+      </ul>
+    </div>
+    <div class="hero-visual">
+      <!-- Swap these with a composite or looped reel later -->
+      <div class="hero-frame">
+        <img src="/images/hero-before.jpg" alt="Before redesign example">
+        <span class="label label-before">Before</span>
+      </div>
+      <div class="hero-frame">
+        <img src="/images/hero-after.jpg" alt="After redesign example">
+        <span class="label label-after">After</span>
+      </div>
+    </div>
   </div>
- </div>
 </section>
 
-<section class="problem-section">
- <div class="container">
-  <h2 class="section-title">Finally, a Website That Matches Your Reputation</h2>
-  <div class="benefits-grid">
-   <div class="benefit-card">
-    <div class="benefit-icon">🔄</div>
-    <h3>Referrals Convert Easier</h3>
-    <p>When visitors can quickly understand your services</p>
-   </div>
-   <div class="benefit-card">
-    <div class="benefit-icon">🎯</div>
-    <h3>Ideal Clients Self-Qualify</h3>
-    <p>Through clear information hierarchy</p>
-   </div>
-   <div class="benefit-card">
-    <div class="benefit-icon">✨</div>
-    <h3>Your Expertise Shines</h3>
-    <p>Through organized, readable content</p>
-   </div>
-   <div class="benefit-card">
-    <div class="benefit-icon">🏆</div>
-    <h3>Professional Presence</h3>
-    <p>Reinforces the quality they'll experience</p>
-   </div>
+<!-- SOCIAL PROOF / LOGO STRIP -->
+<section class="logo-strip section-light" aria-label="Industries we work with">
+  <div class="container">
+    <div class="logo-marquee">
+      <span>Home Services</span>
+      <span>Legal</span>
+      <span>Health & Wellness</span>
+      <span>Consulting</span>
+      <span>B2B Services</span>
+      <span>Nonprofit</span>
+      <span>Professional Services</span>
+    </div>
   </div>
- </div>
 </section>
 
+<!-- QUICK OFFER: What You Get -->
+<section class="detailed-process-section">
+  <div class="container narrow-container">
+    <h2 class="section-title">What You Get in Two Weeks</h2>
+    <div class="deliverables deliverables-3">
+      <div class="deliverable">
+        <div class="step-header"><span class="step-label">Preserve Your Content</span></div>
+        <ul>
+          <li>1:1 import of pages + meta data</li>
+          <li>Redirect map (301s) documented</li>
+          <li>No net content loss without approval</li>
+        </ul>
+      </div>
+      <div class="deliverable">
+        <div class="step-header"><span class="step-label">Design & UX Upgrade</span></div>
+        <ul>
+          <li>Modern, readable layout + clear CTAs</li>
+          <li>Mobile-first + accessibility basics</li>
+          <li>Lead form optimization</li>
+        </ul>
+      </div>
+      <div class="deliverable">
+        <div class="step-header"><span class="step-label">Performance & SEO Safety</span></div>
+        <ul>
+          <li>LCP &lt; 2.5s, CLS &lt; 0.1 targets</li>
+          <li>Image optimization & caching</li>
+          <li>Sitemap & Search Console resubmission</li>
+        </ul>
+      </div>
+    </div>
+    <div class="center mt-4">
+      <a href="/pricing.php" class="btn btn-primary">See Pricing</a>
+      <a href="/faqs.php" class="btn btn-link">Read FAQs</a>
+    </div>
+  </div>
+</section>
+
+<!-- MINI BEFORE/AFTER PROOF -->
+<section class="proof-section">
+  <div class="container narrow-container">
+    <h2 class="section-title">From Dated to Polished—Fast</h2>
+    <div class="ba-grid ba-grid-2">
+      <div class="ba-tile">
+        <div class="ba-images">
+          <img src="/images/case1-before.jpg" alt="Before redesign screenshot">
+          <img src="/images/case1-after.jpg" alt="After redesign screenshot">
+        </div>
+        <p class="ba-result"><strong>+38% form submissions</strong> in 30 days • <strong>1.3s</strong> load time</p>
+      </div>
+      <div class="ba-tile">
+        <div class="ba-images">
+          <img src="/images/case2-before.jpg" alt="Before redesign screenshot">
+          <img src="/images/case2-after.jpg" alt="After redesign screenshot">
+        </div>
+        <p class="ba-result"><strong>-52% bounce rate</strong> • <strong>LCP 1.9s</strong> on mobile</p>
+      </div>
+    </div>
+    <div class="center mt-4">
+      <a href="/process.php#before-after" class="btn btn-link">See more before/after →</a>
+    </div>
+  </div>
+</section>
+
+<!-- SIMPLE PROCESS (SKIM-READY) -->
+<section class="process-preview section-light">
+  <div class="container">
+    <h2 class="section-title">How It Works (No Homework)</h2>
+    <div class="simple-process">
+      <div class="process-connector" aria-hidden="true"></div>
+      <div class="process-step">
+        <div class="step-icon">📥</div>
+        <h3>Pull Everything In</h3>
+        <p>We capture your existing pages, copy, and images. No blank-page writing.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-icon">🧭</div>
+        <h3>Reframe for Conversion</h3>
+        <p>Clear structure and CTAs that turn visits into leads.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-icon">⚡</div>
+        <h3>Launch Safely</h3>
+        <p>SEO-safe migration, analytics intact, 14-day tweaks window.</p>
+      </div>
+    </div>
+    <div class="center mt-4">
+      <a href="/process.php" class="btn btn-primary">See the Full Process</a>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRIES / USE-CASES -->
+<section class="industries">
+  <div class="container">
+    <h2 class="section-title">Built for Service Businesses</h2>
+    <div class="industry-grid">
+      <div class="industry-card">
+        <h3>Home Services</h3>
+        <p>Faster calls from a cleaner homepage. Click-to-call and quote forms front and center.</p>
+      </div>
+      <div class="industry-card">
+        <h3>Legal & Professional</h3>
+        <p>Trust-forward layouts, bios that don’t bore, and quick contact above the fold.</p>
+      </div>
+      <div class="industry-card">
+        <h3>Health & Wellness</h3>
+        <p>Warm visuals, clear services, and simple booking integrations that convert.</p>
+      </div>
+      <div class="industry-card">
+        <h3>B2B Services</h3>
+        <p>Positioning cleaned up. Case-study highlights. Frictionless discovery calls.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials section-light">
+  <div class="container narrow-container">
+    <h2 class="section-title">What Clients Say</h2>
+    <div class="testimonial-cards">
+      <figure class="t-card">
+        <blockquote>“In 10 days we went from dated to sharp. Calls picked up the first week.”</blockquote>
+        <figcaption>Sarah P., HVAC Owner</figcaption>
+      </figure>
+      <figure class="t-card">
+        <blockquote>“Zero drama. They handled SEO and redirects—we didn’t lose rankings.”</blockquote>
+        <figcaption>Mark L., Attorney</figcaption>
+      </figure>
+      <figure class="t-card">
+        <blockquote>“Fast, clear, and on budget. The mobile version finally works.”</blockquote>
+        <figcaption>Jenna R., Fitness Studio</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING TEASER -->
 <section class="approach-section">
- <div class="container">
-  <h2 class="section-title">Skip the Typical Agency Nightmare</h2>
-
-  <div class="comparison-grid">
-   <div class="approach-column">
-    <h3>Traditional Agency</h3>
-    <ul>
-     <li>$5,000-15,000</li>
-     <li>3-6 months</li>
-     <li>Demands new content</li>
-     <li>Surprise fees</li>
-     <li>Locks you in</li>
-    </ul>
-   </div>
-
-   <div class="approach-column">
-    <h3>DIY Solutions</h3>
-    <ul>
-     <li>Endless hours</li>
-     <li>Never quite right</li>
-     <li>Generic templates</li>
-     <li>No support</li>
-     <li>You're alone</li>
-    </ul>
-   </div>
-
-   <div class="approach-column highlight">
-    <h3>Our Approach</h3>
-    <ul>
-     <li>From $1,500</li>
-     <li>7-14 days</li>
-     <li>Uses your content</li>
-     <li>Everything included</li>
-     <li>Pay after launch</li>
-    </ul>
-   </div>
+  <div class="container">
+    <h2 class="section-title">Transparent, One-Time Pricing</h2>
+    <div class="comparison-grid pricing-teaser">
+      <div class="approach-column">
+        <div class="column-header"><h3>Starter</h3></div>
+        <ul>
+          <li><strong>$1,500</strong> one-time</li>
+          <li>Up to 8 pages</li>
+          <li>SEO-safe launch</li>
+        </ul>
+      </div>
+      <div class="approach-column highlight">
+        <div class="column-header"><h3>Standard</h3></div>
+        <ul>
+          <li><strong>$2,500</strong> one-time</li>
+          <li>Up to 20 pages</li>
+          <li>Analytics carried over</li>
+        </ul>
+      </div>
+      <div class="approach-column">
+        <div class="column-header"><h3>Plus</h3></div>
+        <ul>
+          <li><strong>$3,500</strong> one-time</li>
+          <li>Up to 40 pages</li>
+          <li>Schema & internal links</li>
+        </ul>
+      </div>
+    </div>
+    <div class="center mt-4">
+      <a href="/pricing.php" class="btn btn-primary">See Full Pricing</a>
+      <a href="/contact.php" class="btn btn-link">Get a Fixed Quote</a>
+    </div>
   </div>
- </div>
 </section>
 
-<section class="process-preview">
- <div class="container">
-  <h2 class="section-title">Three Steps to a Website That Works</h2>
-
-  <div class="simple-process">
-   <div class="process-step">
-    <div class="step-icon">📥</div>
-    <h3>We Capture</h3>
-    <p>Every page of your current site preserved</p>
-   </div>
-
-   <div class="process-step">
-    <div class="step-icon">🔍</div>
-    <h3>We Analyze</h3>
-    <p>Your unique style identified and refined</p>
-   </div>
-
-   <div class="process-step">
-    <div class="step-icon">🚀</div>
-    <h3>We Deliver</h3>
-    <p>Better UX with your personality intact</p>
-   </div>
+<!-- CLOSE / PROMISE -->
+<section class="promise-section">
+  <div class="container narrow-container">
+    <div class="promise-box">
+      <h2>Ship in Two Weeks—Or You Don’t Pay</h2>
+      <p>No drama. No delays. We’ll preserve your voice, upgrade design and speed, and launch SEO-safe. If we don’t deliver what we agreed, payment waits.</p>
+      <a href="/contact.php" class="btn btn-primary">Book a 15-min Rapid Audit</a>
+    </div>
   </div>
-
-  <div class="cta-center">
-   <a href="our-process.php" class="btn">See the Full Process</a>
-  </div>
- </div>
 </section>
 
-<section class="concerns-section">
- <div class="container">
-  <h2 class="section-title">Yes, We've Thought of That</h2>
+<!-- Sticky CTA -->
+<div class="sticky-cta" aria-hidden="false">
+  <a href="/contact.php" class="btn btn-primary">Book a 15-min Audit</a>
+</div>
 
-  <div class="faq-grid">
-   <div class="faq-card">
-    <div class="faq-question">
-     <div class="faq-icon">❓</div>
-     <h3>"I don't want a cookie-cutter site"</h3>
-    </div>
-    <div class="faq-answer">
-     <p>We maintain your unique voice and brand identity</p>
-    </div>
-   </div>
-
-   <div class="faq-card">
-    <div class="faq-question">
-     <div class="faq-icon">❓</div>
-     <h3>"I don't have time for this"</h3>
-    </div>
-    <div class="faq-answer">
-     <p>7-14 days turnaround with minimal involvement needed</p>
-    </div>
-   </div>
-
-   <div class="faq-card">
-    <div class="faq-question">
-     <div class="faq-icon">❓</div>
-     <h3>"I'm already getting enough clients"</h3>
-    </div>
-    <div class="faq-answer">
-     <p>Future-proof your business while you're strong</p>
-    </div>
-   </div>
-
-   <div class="faq-card">
-    <div class="faq-question">
-     <div class="faq-icon">❓</div>
-     <h3>"I don't have new content"</h3>
-    </div>
-    <div class="faq-answer">
-     <p>We improve and optimize what you already have</p>
-    </div>
-   </div>
-
-   <div class="faq-card">
-    <div class="faq-question">
-     <div class="faq-icon">❓</div>
-     <h3>"Web developers have burned me"</h3>
-    </div>
-    <div class="faq-answer">
-     <p>Pay 50% after you see and approve the results</p>
-    </div>
-   </div>
-  </div>
-
-  <div class="cta-center">
-   <a href="addressing-concerns.php" class="btn btn-light">See All Concerns Addressed</a>
-  </div>
- </div>
-</section>
-
-<section class="pricing-section">
- <div class="container">
-  <h2 class="section-title">Simple, Honest Pricing</h2>
-
-  <div class="pricing-cards">
-   <div class="pricing-card">
-    <h3>Website Redesign</h3>
-    <div class="price">Starting at $1,500</div>
-    <ul>
-     <li>Everything included (SEO, security, mobile, speed)</li>
-     <li>50% at launch, 50% in 30 days</li>
-     <li>No contracts before work</li>
-    </ul>
-   </div>
-
-   <div class="pricing-card">
-    <h3>Optional Ongoing</h3>
-    <div class="price">$20/month</div>
-    <ul>
-     <li>Hosting & maintenance included</li>
-     <li>Cancel anytime</li>
-     <li>Not required</li>
-    </ul>
-   </div>
-  </div>
- </div>
-</section>
-
-<section id="assessment" class="final-cta">
- <div class="container">
-  <h2 class="section-title">Interested?</h2>
-
-  <div class="cta-options">
-   <a href="#" class="btn">Get a Free Website Assessment</a>
-   <a href="our-process.php" class="btn btn-light">See Our Process First</a>
-  </div>
-
-  <p class="reassurance">No sales calls. No obligations. Just honest feedback on what's costing you clients.</p>
- </div>
-</section>
-
-<?php include('components/footer.php'); ?>
+<?php include(__DIR__ . '/components/footer.php'); ?>
+</main>
+</body>
+</html>

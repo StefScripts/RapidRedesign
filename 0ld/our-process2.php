@@ -96,6 +96,22 @@ include('components/header.php');
 
     </div>
 
+    <div class="timeline-box">
+      <h3>Timeline That Respects Your Business</h3>
+      <ul>
+  <li><strong>7-14 days turnaround</strong> depending on revision requests</li>
+  <li><strong>No drawn-out projects</strong> that drain your time and patience</li>
+  <!-- <li><strong>Content optimization</strong> that improves readability while maintaining your unique tone</li>
+  <li><strong>Smart restructuring</strong> by merging redundant pages and enhancing information hierarchy</li>
+  <li><strong>SEO-optimized pages</strong> for maximum visibility and engagement</li>
+  <li><strong>Visual refinements</strong> that enhance your design while preserving your brand identity</li>
+  <li><strong>Mobile-responsive design</strong> ensuring perfect display on all devices</li>
+  <li><strong>Security & speed upgrades</strong> with HTTPS implementation and performance optimization</li>
+  <li><strong>Lead capture forms</strong> and prominent CTAs for better conversions</li>
+  <li><strong>Intuitive navigation</strong> that reduces visitor frustration and improves user experience</li> -->
+</ul>
+    </div>
+
     <h2 class="section-title">What You'll Never See From Us</h2>
     <div class="avoid-list">
       <ul>
