@@ -44,6 +44,60 @@ include('components/header.php');
   </div>
 </section>
 
+<!-- Detailed Process Explanation Section -->
+<section class="detailed-process-section">
+  <div class="container narrow-container">
+    <h2 class="section-title">A Simple, 3-Step Transformation</h2>
+    
+    <div class="transformation-steps">
+      <!-- Step 1 -->
+      <div class="transformation-step">
+        <div class="step-header">
+          <span class="step-label">Step 1: Preserve Your Content</span>
+        </div>
+        <p class="step-description"><strong>We capture everything from your existing website—every page, every paragraph, every detail you've already created.</strong></p>
+        <div class="step-benefits">
+          <h4>What this means for you:</h4>
+          <ul>
+            <li>No copywriting homework</li>
+            <li>Your existing content is our blueprint</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="transformation-step">
+        <div class="step-header">
+          <span class="step-label">Step 2: Keep Your Identity, Lose the Clutter</span>
+        </div>
+        <p class="step-description"><strong>We analyze your current site's visual style, identifying colors, fonts, and images that represent your unique brand. We keep what works and remove what doesn't.</strong></p>
+        <div class="step-benefits">
+          <h4>What this means for you:</h4>
+          <ul>
+            <li>Your site's personality remains intact</li>
+            <li>Refined visuals, never generic templates</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="transformation-step">
+        <div class="step-header">
+          <span class="step-label">Step 3: Upgrade Your User Experience</span>
+        </div>
+        <p class="step-description"><strong>We rebuild your site for optimal user experience—easy to read, navigate, and contact you—while preserving its essential character.</strong></p>
+        <div class="step-benefits">
+          <h4>What this means for you:</h4>
+          <ul>
+            <li>A familiar website that simply works better</li>
+            <li>Clear pathways that turn visitors into leads</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Improvements Section with enhanced cards -->
 <section class="improvements-section">
   <div class="container narrow-container">
@@ -174,7 +228,7 @@ include('components/header.php');
           <h3>Content Overhaul</h3>
         </div>
         <ul>
-          <li>Add new pages, testimonials, and/or images</li>
+          <li>Add new pages, testimonials, images, and more</li>
         </ul>
       </div>
       
@@ -192,7 +246,7 @@ include('components/header.php');
           <h3>Hosting</h3>
         </div>
         <ul>
-          <li>Fast, secure hosting, without breaking the bank.</li>
+          <li>Fast, secure hosting, without breaking the bank</li>
         </ul>
       </div>
       

@@ -102,6 +102,93 @@
 }
 
 /* =================================================================
+   Detailed Process Explanation Section
+================================================================= */
+.detailed-process-section {
+  padding: var(--space-2xl) 0;
+  background: white;
+}
+
+.transformation-steps {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  margin-top: var(--space-xl);
+}
+
+.transformation-step {
+  background: var(--light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  border: 1px solid var(--medium);
+  position: relative;
+}
+
+.step-header {
+  margin-bottom: var(--space-md);
+}
+
+.step-label {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.step-description {
+  font-size: var(--text-base);
+  color: var(--text-primary);
+  line-height: var(--leading-relaxed);
+  margin-bottom: var(--space-md);
+}
+
+.step-benefits {
+  border-top: 1px solid var(--medium);
+  padding-top: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+.step-benefits h4 {
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin-bottom: var(--space-sm);
+}
+
+.step-benefits ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.step-benefits li {
+  padding: var(--space-xs) 0 var(--space-xs) var(--space-lg);
+  position: relative;
+  color: var(--text-secondary);
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+}
+
+.step-benefits li::before {
+  content: '•';
+  position: absolute;
+  left: var(--space-sm);
+  color: var(--primary);
+  font-weight: bold;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .transformation-steps {
+    gap: var(--space-lg);
+  }
+
+  .transformation-step {
+    padding: var(--space-md);
+  }
+}
+
+/* =================================================================
    Benefits & Cards with improved design
 ================================================================= */
 .improvements-section {

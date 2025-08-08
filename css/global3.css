@@ -17,8 +17,8 @@
   --light-alt: #f3f4f6;
   --medium: #e5e7eb;
   --dark: #1f2937;
-  --text-primary: #111827;
-  --text-secondary: #4b5563;
+  --text-primary: #060911;
+  --text-secondary: #3b434e;
   --text-muted: #6b7280;
 
   /* Spacing scale - Reduced for tighter layout */
@@ -249,7 +249,7 @@ header {
 .hero,
 .page-hero {
   background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
-  padding: var(--space-2xl) 0;
+  padding: var(--space-3xl) 0;
   text-align: center;
   border-bottom: 1px solid var(--medium);
 }
