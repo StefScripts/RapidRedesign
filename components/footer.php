@@ -27,14 +27,14 @@
       </ul>
     </nav>
 
-    <nav class="footer-links" aria-label="Resources">
+    <!-- <nav class="footer-links" aria-label="Resources">
       <h4>Resources</h4>
       <ul>
-        <!-- <li><a href="/portfolio.php">Portfolio</a></li> -->
+        <li><a href="/portfolio.php">Portfolio</a></li>
         <li><a href="/checklist.php">Website Upgrade Checklist</a></li>
-        <!-- <li><a href="/book.php">Book an Audit</a></li> -->
+        <li><a href="/book.php">Book an Audit</a></li>
       </ul>
-    </nav>
+    </nav> -->
 
     <div class="footer-cta">
       <h4>Get a quick site audit</h4>
