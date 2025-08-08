@@ -1,7 +1,7 @@
 <?php
 $pageTitle = "Pricing | Rapid Redesign";
 $pageDescription = "Transparent pricing for 7–14 day website upgrades. Fixed scope, clear deliverables, and $0 due until launch.";
-include(__DIR__ . '/components/header2.php');
+include(__DIR__ . '/components/header.php');
 ?>
 
 <!-- Hero -->
@@ -155,7 +155,7 @@ include(__DIR__ . '/components/header2.php');
   <a href="/contact.php" class="btn btn-primary">Get a Fixed Quote</a>
 </div>
 
-<?php include(__DIR__ . '/components/footer2.php'); ?>
+<?php include(__DIR__ . '/components/footer.php'); ?>
 </main>
 </body>
 </html>

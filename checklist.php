@@ -1,7 +1,7 @@
 <?php
 $pageTitle = "Website Upgrade Checklist | Rapid Redesign";
 $pageDescription = "A practical, no-fluff checklist to turn an outdated website into a fast, modern, SEO-safe lead machine. Use it to spot quick wins before a redesign.";
-include(__DIR__ . '/components/header2.php');
+include(__DIR__ . '/components/header.php');
 ?>
 
 <!-- HERO -->
@@ -10,7 +10,7 @@ include(__DIR__ . '/components/header2.php');
     <h1>Website Upgrade Checklist</h1>
     <p class="lead-text">Use this to quickly spot what’s hurting conversions, speed, and SEO. Fix what you can—then we’ll handle the rest in 7–14 days.</p>
     <div class="hero-ctas">
-      <a href="/contact.php" class="btn btn-primary">Get a 15-min Rapid Audit</a>
+      <!-- <a href="/contact.php" class="btn btn-primary">Get a 15-min Rapid Audit</a> -->
       <a href="#download" class="btn btn-link">Download as PDF</a>
     </div>
   </div>
@@ -112,7 +112,7 @@ include(__DIR__ . '/components/header2.php');
   <a href="/contact.php" class="btn btn-primary">Get a Fixed Plan</a>
 </div>
 
-<?php include(__DIR__ . '/components/footer2.php'); ?>
+<?php include(__DIR__ . '/components/footer.php'); ?>
 </main>
 </body>
 </html>

@@ -1,7 +1,7 @@
 <?php
 $pageTitle = "Before & After Gallery | Rapid Redesign";
 $pageDescription = "See how outdated websites transform into fast, modern, SEO-safe lead machines. Real examples of layout, speed, and conversion improvements.";
-include(__DIR__ . '/components/header2.php');
+include(__DIR__ . '/components/header.php');
 ?>
 
 <!-- HERO -->
@@ -126,7 +126,7 @@ include(__DIR__ . '/components/header2.php');
   })();
 </script>
 
-<?php include(__DIR__ . '/components/footer2.php'); ?>
+<?php include(__DIR__ . '/components/footer.php'); ?>
 </main>
 </body>
 </html>
