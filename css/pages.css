@@ -469,6 +469,86 @@
   margin-bottom: 0;
 }
 
+/* ===== Owner-friendly homepage tweaks ===== */
+.alt-hero {
+  border-bottom: 1px solid var(--line);
+}
+.text-card .problem-fix {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap-4);
+  background: var(--elev-1);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: var(--gap-5);
+  box-shadow: var(--shadow-1);
+}
+.pf-bad {
+  color: #ffd2d5;
+}
+.pf-good {
+  color: #b6ffe6;
+}
+.text-card ul {
+  margin: 0;
+  padding-left: 18px;
+}
+@media (max-width: 980px) {
+  .text-card .problem-fix {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Relatable pain cards */
+.problem-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--gap-5);
+}
+.p-card {
+  background: var(--elev-1);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: var(--gap-5);
+  box-shadow: var(--shadow-1);
+  transition: transform var(--speed-2) var(--ease), box-shadow var(--speed-2) var(--ease), border-color var(--speed-2) var(--ease);
+}
+.p-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-2);
+  border-color: var(--brand-400);
+}
+@media (max-width: 980px) {
+  .problem-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Why us / guarantees */
+.why-us {
+  padding: var(--gap-7) 0;
+}
+.guarantee-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--gap-5);
+}
+.g-card {
+  background: var(--elev-1);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: var(--gap-5);
+  box-shadow: var(--shadow-1);
+}
+.g-card h3 {
+  margin: 0 0 8px;
+}
+@media (max-width: 980px) {
+  .guarantee-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ===== Checklist Page ===== */
 .rr-checklist {
   list-style: none;

@@ -18,11 +18,10 @@ include(__DIR__ . '/components/header.php');
 </section>
 
 <!-- Section 2 -->
-<section id="before-after" class="proof-section section-light">
+<!-- <section id="before-after" class="proof-section section-light">
   <div class="container narrow-container">
     <h2 class="section-title">Recent Rapid Redesigns</h2>
     <div class="ba-grid">
-      <!-- Repeat 3–5 tiles -->
       <div class="ba-tile">
         <div class="ba-images">
           <img src="/img/case1-before.jpg" alt="Before">
@@ -36,7 +35,7 @@ include(__DIR__ . '/components/header.php');
       <span>— Sarah P., HVAC Owner</span>
     </blockquote>
   </div>
-</section>
+</section> -->
 
 <!-- Section 3 -->
 <section class="process-preview section-light">
