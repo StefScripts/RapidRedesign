@@ -1,12 +1,15 @@
 <?php
 // Defaults for SEO if page doesn't define them
-if (!isset($pageTitle)) { $pageTitle = "Rapid Redesign | 7–14 Day Website Upgrades"; }
+if (!isset($pageTitle)) {
+  $pageTitle = "Rapid Redesign | 7–14 Day Website Upgrades";
+}
 if (!isset($pageDescription)) {
   $pageDescription = "We upgrade outdated websites into fast, modern, SEO-safe lead machines in just 7–14 days. Keep your content, improve your design, and pay $0 until launch.";
 }
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <!-- Basic Meta -->
   <meta charset="UTF-8">
